@@ -6,7 +6,7 @@
 /* Select the right PCB by uncommenting one of the following lines
  * Bitte die passende Platine durch entfernen der Kommentare in einer der folgenden Zeilen auswählen
  */
-//#define TonUINO_Classic
+#define TonUINO_Classic
 //#define TonUINO_Every
 //#define ALLinONE
 //#define ALLinONE_Plus
@@ -17,7 +17,7 @@
  *          FIVEBUTTONS  for AiO and AiO+
  */
 //#define THREEBUTTONS
-//#define FIVEBUTTONS
+#define FIVEBUTTONS
 //#define BUTTONS3X3
 
 /* uncomment the below line to enable serial input as additional command source
@@ -34,8 +34,8 @@
  */
 //#define DFMiniMp3_T_CHIP_GD3200B
 //#define DFMiniMp3_T_CHIP_MH2024K16SS
-//#define DFMiniMp3_T_CHIP_LISP3
-#define DFMiniMp3_T_CHIP_Mp3ChipIncongruousNoAck
+#define DFMiniMp3_T_CHIP_LISP3
+//#define DFMiniMp3_T_CHIP_Mp3ChipIncongruousNoAck
 
 /* uncomment the below line to disable shutdown via button (long press play/pause)
  * um ein Shutdown via Taste (long press Play/Pause) zu unterdrücken bitte in der nächste Zeile den Kommentar entfernen
@@ -92,21 +92,21 @@ inline constexpr uint8_t neoPixelNumber  = 24; // Total Number of Pixels
  * um die selbe RFID zu ignorieren, wenn die bereits spielt, in der nächste
  * Zeile den Kommentar entfernen
  */
-//#define DONT_ACCEPT_SAME_RFID_TWICE
+#define DONT_ACCEPT_SAME_RFID_TWICE
 
 /* uncomment the below line to resume playback if the RFID that started the
  * playback is detected again
  * um die Wiedergabe fortzusetzen, wenn die selbe RFID erkannt wird, die bereits
  * abgespielt wird, in der nächste Zeile den Kommentar entfernen
  */
-//#define RESUME_ON_SAME_RFID
+#define RESUME_ON_SAME_RFID
 
 /* uncomment the below line to replay the last card or short cut if pressed play/pause
  * in Idle state
  * um die letzte Karte oder den letzten Short Cut wieder abzuspielen, wenn die Play/Pause Taste
  * im Idle State gedrückt wird, in der nächste Zeile den Kommentar entfernen
  */
-//#define REPLAY_ON_PLAY_BUTTON
+#define REPLAY_ON_PLAY_BUTTON
 
 /* #################################################################################################
  * ##### normally, you don't have to edit lines below                   ############################
@@ -188,7 +188,7 @@ inline constexpr unsigned long dfPlayer_timeUntilStarts = 1000;
 
 // ####### tonuino #####################################
 
-inline constexpr uint8_t       shutdownPin      = 7;
+inline constexpr uint8_t       shutdownPin      = A5;
 inline constexpr levelType     shutdownPinType  = levelType::activeHigh;
 inline constexpr uint8_t       ampEnablePin     = 6;
 inline constexpr levelType     ampEnablePinType = levelType::activeHigh;
