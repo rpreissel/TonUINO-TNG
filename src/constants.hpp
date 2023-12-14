@@ -6,7 +6,7 @@
 /* Select the right PCB by uncommenting one of the following lines
  * Bitte die passende Platine durch entfernen der Kommentare in einer der folgenden Zeilen auswählen
  */
-//#define TonUINO_Classic
+#define TonUINO_Classic
 //#define TonUINO_Every
 //#define ALLinONE
 //#define ALLinONE_Plus
@@ -34,13 +34,13 @@
  */
 //#define DFMiniMp3_T_CHIP_GD3200B
 //#define DFMiniMp3_T_CHIP_MH2024K16SS
-//#define DFMiniMp3_T_CHIP_LISP3
-#define DFMiniMp3_T_CHIP_Mp3ChipIncongruousNoAck
+#define DFMiniMp3_T_CHIP_LISP3
+//#define DFMiniMp3_T_CHIP_Mp3ChipIncongruousNoAck
 
 /* uncomment the below line to disable shutdown via button (long press play/pause)
  * um ein Shutdown via Taste (long press Play/Pause) zu unterdrücken bitte in der nächste Zeile den Kommentar entfernen
  */
-//#define DISABLE_SHUTDOWN_VIA_BUTTON
+#define DISABLE_SHUTDOWN_VIA_BUTTON
 
 /* uncomment the below line to enable the rotary encoder for volume setting (only for AiOplus)
  * um den Drehgeber zu unterstützen bitte in der nächste Zeile den Kommentar entfernen (nur für AioPlus)
@@ -92,14 +92,14 @@ inline constexpr uint8_t neoPixelNumber  = 24; // Total Number of Pixels
  * um die selbe RFID zu ignorieren, wenn die bereits spielt, in der nächste
  * Zeile den Kommentar entfernen
  */
-//#define DONT_ACCEPT_SAME_RFID_TWICE
+#define DONT_ACCEPT_SAME_RFID_TWICE
 
 /* uncomment the below line to resume playback if the RFID that started the
  * playback is detected again
  * um die Wiedergabe fortzusetzen, wenn die selbe RFID erkannt wird, die bereits
  * abgespielt wird, in der nächste Zeile den Kommentar entfernen
  */
-//#define RESUME_ON_SAME_RFID
+#define RESUME_ON_SAME_RFID
 
 /* uncomment the below line to replay the last card or short cut if pressed play/pause
  * in Idle state
