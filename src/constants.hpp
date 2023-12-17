@@ -106,7 +106,7 @@ inline constexpr uint8_t neoPixelNumber  = 24; // Total Number of Pixels
  * um die letzte Karte oder den letzten Short Cut wieder abzuspielen, wenn die Play/Pause Taste
  * im Idle State gedrückt wird, in der nächste Zeile den Kommentar entfernen
  */
-#define REPLAY_ON_PLAY_BUTTON
+//#define REPLAY_ON_PLAY_BUTTON
 
 /* #################################################################################################
  * ##### normally, you don't have to edit lines below                   ############################
